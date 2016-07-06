@@ -32,6 +32,18 @@ namespace RPSGenerator.Objects
       {
         return "Tie Game";
       }
+      else if (_player1 == "Paper")
+      {
+        if (this.GetPlayer2() == "Rock")
+        {
+          return "Player 1 Wins";
+        }
+        else
+        //(this.GetPlayer2() == "Scissors")
+        {
+          return "Player 2 Wins";
+        }
+      }
       else
       {
         return "Someone Won";
