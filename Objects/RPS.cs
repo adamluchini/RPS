@@ -92,7 +92,8 @@ namespace RPSGenerator.Objects
           return "Player 2 Wins";
         }
       }
-      else if (_player1 == "Scissors")
+      else
+      // (_player1 == "Scissors")
       {
         if (this.GetPlayer2() == "Rock")
         {
@@ -103,10 +104,6 @@ namespace RPSGenerator.Objects
         {
           return "Player 1 Wins";
         }
-      }
-      else
-      {
-        return "Someone Won";
       }
     }
   }
