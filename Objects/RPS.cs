@@ -68,6 +68,18 @@ namespace RPSGenerator.Objects
           return "Player 1 Wins";
         }
       }
+      else if (_player1 == "Rock")
+      {
+        if (this.GetPlayer2() == "Scissors")
+        {
+          return "Player 1 Wins";
+        }
+        else
+        //(this.GetPlayer2() == "Paper")
+        {
+          return "Player 1 Wins";
+        }
+      }
       else
       {
         return "Someone Won";

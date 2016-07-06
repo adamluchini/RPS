@@ -40,5 +40,12 @@ namespace RPSGenerator.Objects
       Assert.Equal("Player 2 Wins", newRPSClass.GameResult());
     }
 
+    [Fact]
+    public void GameResult_RockVsScissors()
+    {
+      RPSClass newRPSClass = new RPSClass ("Rock", "Scissors");
+      Assert.Equal("Player 1 Wins", newRPSClass.GameResult());
+    }
+
   }
 }
