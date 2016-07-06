@@ -30,66 +30,66 @@ namespace RPSGenerator.Objects
     {
       if (_player1 == this.GetPlayer2())
       {
-        return "Tie Game";
+        return "Tie Game - Click to Play Again";
       }
       else if (_player1 == "Paper")
       {
         if (this.GetPlayer2() == "Rock")
         {
-          return "Player 1 Wins";
+          return "Player 1 Wins - Click to Play Again";
         }
         else
         //(this.GetPlayer2() == "Scissors")
         {
-          return "Player 2 Wins";
+          return "Player 2 Wins - Click to Play Again";
         }
       }
       else if (_player1 == "Paper")
       {
         if (this.GetPlayer2() == "Scissors")
         {
-          return "Player 2 Wins";
+          return "Player 2 Wins - Click to Play Again";
         }
         else
         //(this.GetPlayer2() == "Rock")
         {
-          return "Player 1 Wins";
+          return "Player 1 Wins - Click to Play Again";
         }
       }
       else if (_player1 == "Rock")
       {
         if (this.GetPlayer2() == "Paper")
         {
-          return "Player 2 Wins";
+          return "Player 2 Wins - Click to Play Again";
         }
         else
         //(this.GetPlayer2() == "Scissors")
         {
-          return "Player 1 Wins";
+          return "Player 1 Wins - Click to Play Again";
         }
       }
       else if (_player1 == "Rock")
       {
         if (this.GetPlayer2() == "Scissors")
         {
-          return "Player 1 Wins";
+          return "Player 1 Wins - Click to Play Again";
         }
         else
         //(this.GetPlayer2() == "Paper")
         {
-          return "Player 2 Wins";
+          return "Player 2 Wins - Click to Play Again";
         }
       }
       else if (_player1 == "Scissors")
       {
         if (this.GetPlayer2() == "Paper")
         {
-          return "Player 1 Wins";
+          return "Player 1 Wins - Click to Play Again";
         }
         else
         //(this.GetPlayer2() == "Rock")
         {
-          return "Player 2 Wins";
+          return "Player 2 Wins - Click to Play Again";
         }
       }
       else
@@ -97,12 +97,12 @@ namespace RPSGenerator.Objects
       {
         if (this.GetPlayer2() == "Rock")
         {
-          return "Player 2 Wins";
+          return "Player 2 Wins - Click to Play Again";
         }
         else
         //(this.GetPlayer2() == "Paper")
         {
-          return "Player 1 Wins";
+          return "Player 1 Wins - Click to Play Again";
         }
       }
     }

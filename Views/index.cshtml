@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
   </head>
   <body>
+    <h1>Player 1: Choose</h1>
+    <form action="/player2" method="post">
+      <button type="submit" name="player1" value="Rock">Rock</button>
+    </form>
+    <form action="/player2" method="post">
+      <button type="submit" name="player1" value="Scissors">Scissors</button>
+    </form>
+    <form action="/player2" method="post">
+      <button type="submit" name="player1" value="Paper">Paper</button>
+    </form>
 
+    <ul>
+      @{
+          <a href = "/"><h1>@Model</h1></a>
+        }
+    </ul>
   </body>
 </html>
