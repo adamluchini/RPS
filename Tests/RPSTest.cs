@@ -27,23 +27,37 @@ namespace RPSGenerator.Objects
     }
 
     [Fact]
-    public void GameResult_RockVsRock()
+    public void GameResult_RockVsRock_true()
     {
       RPSClass newRPSClass = new RPSClass("Rock", "Rock");
       Assert.Equal("Tie Game", newRPSClass.GameResult());
     }
 
     [Fact]
-    public void GameResult_RockVsPaper()
+    public void GameResult_RockVsPaper_true()
     {
       RPSClass newRPSClass = new RPSClass("Rock", "Paper");
       Assert.Equal("Player 2 Wins", newRPSClass.GameResult());
     }
 
     [Fact]
-    public void GameResult_RockVsScissors()
+    public void GameResult_RockVsScissors_true()
     {
       RPSClass newRPSClass = new RPSClass ("Rock", "Scissors");
+      Assert.Equal("Player 1 Wins", newRPSClass.GameResult());
+    }
+
+    [Fact]
+    public void GameResult_ScissorsVsScissors_true()
+    {
+      RPSClass newRPSClass = new RPSClass ("Scissors", "Scissors");
+      Assert.Equal("Tie Game", newRPSClass.GameResult());
+    }
+
+    [Fact]
+    public void GameResult_ScissorsVsPaper_true()
+    {
+      RPSClass newRPSClass = new RPSClass ("Scissors", "Paper");
       Assert.Equal("Player 1 Wins", newRPSClass.GameResult());
     }
 
